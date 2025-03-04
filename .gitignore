@@ -178,3 +178,8 @@ cython_debug/
 .msh
 .cas.h5
 .cas
+.xlsx
+.xls
+.docx
+.doc
+.pdf
