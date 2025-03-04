@@ -169,3 +169,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ANSYS and CAD
+.scdoc
+.SLDPRT
+.SLDASM
+.msh.h5
+.msh
+.cas.h5
+.cas
