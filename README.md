@@ -8,7 +8,9 @@ https://developer.ansys.com/blog/pyfluent-cheat-sheet
 
 Tutorials from ANSYS
 https://fluent.docs.pyansys.com/version/stable/user_guide/index.html
+
 https://fluent.docs.pyansys.com/version/stable/examples/00-fluent/external_compressible_flow.html#sphx-glr-examples-00-fluent-external-compressible-flow-py
+
 https://fluent.docs.pyansys.com/version/stable/examples/00-fluent/exhaust_system_settings_api.html#sphx-glr-examples-00-fluent-exhaust-system-settings-api-py
 
 In-depth API documentation from ANSYS (what we will be using)
