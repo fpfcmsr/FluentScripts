@@ -25,3 +25,10 @@ change values for mesh creation to a much more refined mesh -> replace the cours
 change values in case that we want to iterate over using pyfluent -> run solution with refined mesh. 
 
 This allows us to overcome the large learning curve that setting up an entire case in pyfluent can be and focusing on learning only the needed documentation.
+
+
+# Python Build123d Generation
+Some assemblies are now generated with python project build123d.  
+https://github.com/gumyr/build123d  
+https://build123d.readthedocs.io/en/latest/  
+It allows for quick changing of variables and iteration. The idea of CAD as code can be powerful. It does have a learning curve however. 
