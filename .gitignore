@@ -171,6 +171,7 @@ cython_debug/
 .pypirc
 
 # ANSYS and CAD
+.scdocx
 .scdoc
 .SLDPRT
 .SLDASM
@@ -180,6 +181,9 @@ cython_debug/
 .cas
 .cad.h5
 .cad
+.step
+
+# Word and Doc Stuff
 .xlsx
 .xls
 .docx
