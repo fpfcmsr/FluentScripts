@@ -37,5 +37,6 @@ show(
     turbine_disk.sketch, 
     outer_plate.sketch, 
     names=["Turbine Disk", "Outer Plate"],
-    colors=["#0078D7", "#7A7A7A"]
+    colors=["#0078D7", "#7A7A7A"],
+    reset_camera=True
 )
