@@ -25,6 +25,10 @@ with BuildSketch() as outer_plate:
     # Subtract the disk for clearance
     Circle(disk_radius, mode=Mode.SUBTRACT)
 
+# Combine for export
+comp_domain = Compound([turbine_disk.sketch, outer_plate.sketch])
+export_step(comp_domain, "2d-savinous-turbine.step")
+
 # --- Display ---
 show(
     turbine_disk.sketch, 
