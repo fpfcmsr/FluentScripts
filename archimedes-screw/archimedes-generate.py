@@ -1,3 +1,4 @@
+import pathlib
 from build123d import *
 from ocp_vscode import show
 
@@ -39,5 +40,7 @@ with BuildPart() as archimedes_screw:
     sweep(path=helix_path.wires()[0], is_frenet=True)
 
 # Export and Display
-export_step(archimedes_screw.part, "archimedes_screw.step")
-show(archimedes_screw, names=["Archimedes Screw"], colors=["#0078D7"], reset_camera=True)
+current_folder = pathlib.Path(__file__).parent
+output_path = current_folder / "archimedes_screw.step"
+export_step(archimedes_screw.part, str(output_path))
+show(archimedes_screw, names=["Archimedes Screw"], colors=["#0078D7"], reset_camera=true)

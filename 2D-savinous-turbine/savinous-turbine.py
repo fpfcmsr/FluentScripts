@@ -1,3 +1,4 @@
+import pathlib
 from build123d import *
 from ocp_vscode import show
 
@@ -26,8 +27,10 @@ with BuildSketch() as outer_plate:
     Circle(disk_radius, mode=Mode.SUBTRACT)
 
 # Combine for export
+current_folder = pathlib.Path(__file__).parent
+output_path = current_folder / "2d-savinous-turbine.step"
 comp_domain = Compound([turbine_disk.sketch, outer_plate.sketch])
-export_step(comp_domain, "2d-savinous-turbine.step")
+export_step(comp_domain, str(output_path))
 
 # --- Display ---
 show(
