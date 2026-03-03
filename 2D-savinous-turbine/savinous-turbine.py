@@ -8,7 +8,6 @@ blade_thickness = 3.0
 disk_radius = 100.0     # Radius of the circle holding the turbine
 rect_width = 500.0
 rect_height = 250.0
-#clearance = 0.5        # Tiny gap so they don't touch/fuse
 
 # --- Body 1: The Inner Turbine Disk ---
 with BuildSketch() as turbine_disk:
@@ -23,11 +22,10 @@ with BuildSketch() as turbine_disk:
 # --- Body 2: The Outer Rectangular Plate ---
 with BuildSketch() as outer_plate:
     Rectangle(rect_width, rect_height)
-    # Subtract a circle slightly larger than the disk for clearance
+    # Subtract the disk for clearance
     Circle(disk_radius, mode=Mode.SUBTRACT)
 
 # --- Display ---
-# We pass them as a list to show they are separate entities
 show(
     turbine_disk.sketch, 
     outer_plate.sketch, 
